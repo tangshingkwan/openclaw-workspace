@@ -1,0 +1,40 @@
+# Credentials & Secrets
+.credentials/
+*.credential
+*.secret
+*.token
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+secrets/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+
+# System files
+Thumbs.db
+
+# OpenClaw specific
+*.log
+logs/
+*.session
+sessions.json
+
+# Backup directories
+.backup*/
+.backup-pre-*/
+
+# Secrets from skills
+secrets/
