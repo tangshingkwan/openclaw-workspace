@@ -75,3 +75,25 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+---
+
+## Reminders (Quick-Reminders Skill)
+
+**Installed:** skills/quick-reminders
+
+**Target (WhatsApp):** +85291621392
+
+**Usage:**
+```bash
+# Remind me in 2 hours to do something
+bash skills/quick-reminders/scripts/nohup-reminder.sh add "Hey, you wanted to..." --target +85291621392 -t 2h --channel whatsapp
+
+# List active reminders
+bash skills/quick-reminders/scripts/nohup-reminder.sh list
+
+# Remove a reminder
+bash skills/quick-reminders/scripts/nohup-reminder.sh remove <id>
+```
+
+**Note:** For reminders >48h, use TickTick calendar instead.
