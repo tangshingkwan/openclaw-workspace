@@ -6,7 +6,21 @@
 - **Language Rules:**
   - English only → Reply in English
   - Mixed Chinese/English → Reply in Traditional Chinese + Cantonese
-- **Upcoming:** Family trip to Japan (7-14 May 2026) with 7 people
+
+## Korea Trip (March-April 2026)
+
+- **Plan:** First day, go directly from airport to Shiseido Korea office via Uber
+- **Purpose:** Mostly working
+- **Living in:** Seoul (staying/living there, not just visiting)
+- **Arrival:** 2026-03-30
+- **Work at KR office:** 2026-03-31 to 2026-04-02
+- **Departure:** 2026-04-06
+- **Flight:** Cathay Pacific CX410/CX427, HKD 9,011
+- **Hotel:** Shilla Stay Samsung COEX Center, HKD 14,498
+- **Total:** HKD 23,509
+
+## Upcoming Trips
+- **Japan:** Family trip (7-14 May 2026) with 7 people
 
 ## Skills Installed (9 total)
 | Skill | Purpose |
@@ -47,3 +61,34 @@
 - **Platform:** OpenClaw on Proxmox LXC container
 - **Model:** MiniMax-M2.7 (session override)
 - **Identity:** Franky's Little Assistant - Travis 🌞
+
+## Email Monitoring (Travis Inbox)
+- **Dedicated Account:** tangyiusuntravis@gmail.com
+- **App Password:** gnmj zmpf gqqp vmrm
+- **IMAP:** imap.gmail.com (SSL) ✅ Working
+- **Cron:** Email check every 2 hours (Job ID: d2f4f1a4)
+- **Urgent keywords:** urgent, asap, critical, deadline, action required, etc.
+- **Status:** ✅ Active - 43 emails in inbox
+
+## TickTick API (Partially Working)
+- **Client ID:** 8t2L7bh43HshNqK1QQ
+- **Client Secret:** g4kWVY65bA5JUcyIY86yTku6l6XxGUIt
+- **⚠️ Issue:** Token from developer portal is Client Secret, NOT API Token
+- **API Token needed from:** TickTick App → Settings → Third-party Apps → API Token
+- **Note:** Will retry once API Token is obtained
+
+## Cron Jobs Status
+| Job | Status | Notes |
+|-----|--------|-------|
+| Email Check (2hr) | ✅ Active | Working fine |
+| Daily Backup (9AM HKT) | ❌ Failing | Timeout - needs fix |
+| Email Setup Reminder | ❌ Disable | Already done |
+
+## Proxmox Access
+- **Host:** 192.168.1.20:8006
+- **Root:** T98467717k!
+- **Travis SSH key:** ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDgpYquDQphyGbgspdffJF1hDW1OG5OV29g/A6l4wR/6
+
+## Korea Trip Notes
+- ⚠️ Construction at hotel: Yeongdong-daero underground works - Samseong Station Exits 7&8 CLOSED, use Temporary Exit 8
+- ⚠️ Hotel is Shilla Stay Samsung COEX Center, NOT Shilla Stay Gangnam Yeoksam (different location)

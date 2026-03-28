@@ -74,7 +74,35 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## 📦 System Dependencies
+
+| Package | Purpose | Installed |
+|--------|---------|-----------|
+| python3-yaml | Ontology skill schema validation | ✅ 6.0.2 |
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
+
+---
+
+## Email Monitoring
+
+**Status:** ✅ Working
+
+**Dedicated Account:** tangyiusuntravis@gmail.com
+- IMAP: imap.gmail.com (SSL)
+- App Password: gnmj zmpf gqqp vmrm
+
+**Cron Job:** Email Check every 2 hours
+- Job ID: d2f4f1a4-e612-4016-b376-068b7e7d3d2d
+- Checks for unread emails with urgent keywords (urgent, asap, critical, deadline, action required, etc.)
+- Messages Franky on WhatsApp if urgent emails found
+- Script: /root/.openclaw/workspace/scripts/check-emails.py
+
+**Urgent Keywords:**
+- urgent, asap, emergency, critical, deadline
+- action required, immediate, important, priority
 
 ---
 

@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "pid": 101826,
+    "text": "💸 Reminder: Set up auto transfer of HKD 5,000 to Mom\n\nTime to set up that auto transfer you mentioned! Don't forget to do it today. 🌞",
+    "fires_at": "2026-03-27T15:44:11+0000",
+    "fires_epoch": 1774626251,
+    "created_at": "2026-03-25T15:44:11+0000",
+    "msg_file": "/tmp/oclaw-rem-561586192-1.msg"
+  }
+]
