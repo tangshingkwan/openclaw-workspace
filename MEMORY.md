@@ -92,3 +92,15 @@
 ## Korea Trip Notes
 - ⚠️ Construction at hotel: Yeongdong-daero underground works - Samseong Station Exits 7&8 CLOSED, use Temporary Exit 8
 - ⚠️ Hotel is Shilla Stay Samsung COEX Center, NOT Shilla Stay Gangnam Yeoksam (different location)
+
+## Patreon Integration (2026-03-29)
+- **Status:** ✅ Working (cookie-based browser automation)
+- **Creators tracked:**
+  - 茄利略・CUP: https://www.patreon.com/cw/KelileoCUP ✅
+  - Calvin Choy Studio: https://www.patreon.com/c/CalvinChoy ✅
+  - ET Trading: https://www.patreon.com/c/ETTrading ❌ (wrong URL)
+- **Cookies:** `/root/.openclaw/workspace/patreon-cookies.json`
+- **Fetch script:** `/root/.openclaw/workspace/scripts/patreon-fetch.js`
+- **Posts output:** `/root/.openclaw/workspace/patreon-posts.json`
+- **History:** `/root/.openclaw/workspace/patreon-history/YYYY-MM-DD.json`
+- **⚠️ Cookies expire** - need to re-export periodically from browser

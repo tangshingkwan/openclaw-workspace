@@ -1,0 +1,7 @@
+[
+  {"name": "session_id", "value": "7HLh_oOcTd2l_GkfiP1F2IEJrEG2U8umDFnbaf181QM", "domain": "www.patreon.com", "path": "/", "secure": true},
+  {"name": "group_id", "value": "44b0ce3e38d86a5191132e6947d9d68810d4cd26553bb04098730481f0a015a6", "domain": ".patreon.com", "path": "/"},
+  {"name": "patreon_device_id", "value": "2e0ffc86-050f-4260-871d-eb32abbed28d", "domain": "www.patreon.com", "path": "/"},
+  {"name": "patreon_locale_code", "value": "en-US", "domain": "www.patreon.com", "path": "/"},
+  {"name": "patreon_location_country_code", "value": "HK", "domain": "www.patreon.com", "path": "/"}
+]
