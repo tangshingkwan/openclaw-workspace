@@ -43,3 +43,10 @@
 ---
 
 *Last updated: 2026-04-14*
+
+### 2026-04-14 | best_practice
+**Situation:** Installing skills for dev team agents
+**Pattern-Key:** skills-install-symlink
+**Lesson:** Skills from ~/.agents/skills/ (skills.sh) need to be symlinked to ~/.openclaw/workspace/skills/ for OpenClaw to discover them. The skills.sh CLI said "symlinked: OpenClaw" but the symlinks were NOT created automatically.
+**Action:** Manually run: ln -sf ~/.agents/skills/<skill-name> ~/.openclaw/workspace/skills/<skill-name>
+**Promote to:** TOOLS.md - Skills installation
