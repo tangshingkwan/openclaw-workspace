@@ -1,0 +1,15 @@
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null,
+    "memory_flush": null,
+    "ontology_review": null
+  },
+  "dailyMemoryFlush": {
+    "lastFlush": null,
+    "interval": "every few days"
+  },
+  "status": "initialized",
+  "initialized": "2026-04-14T15:07:00Z"
+}
