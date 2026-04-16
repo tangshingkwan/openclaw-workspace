@@ -23,14 +23,14 @@
 - Always identify character set before selecting fonts (SC vs TC vs Japanese)
 - Noto Sans SC = Simplified Chinese, Noto Sans TC = Traditional Chinese
 - Test Chinese text rendering early, not after multiple iterations
-**Promote to:** TOOLS.md
+**Promote to:** ✅ PROMOTED → TOOLS.md (2026-04-15 bi-weekly review)
 
 ### 2026-04-11 | correction
 **Situation:** Fig. 1 in dryer manual PDF was cropped incorrectly
 **User said:** "The fig. 1 is not having the full picture"
 **Correction:** Used wrong crop coordinates from image analysis
 **Lesson:** Always ask user to resend reference image when crop quality is uncertain
-**Promote to:** AGENTS.md - Image processing workflow
+**Promote to:** ✅ PROMOTED → AGENTS.md (2026-04-15 bi-weekly review)
 
 ---
 
@@ -38,7 +38,7 @@
 **Topic:** Discord PDF/file sharing via openclaw message send
 **Gap:** Not aware of openclaw message send --media CLI approach initially
 **Discovered:** `openclaw message send --channel discord --target channel:XXX --media /path/to/file`
-**Promote to:** TOOLS.md
+**Promote to:** ✅ PROMOTED → TOOLS.md (2026-04-15 bi-weekly review)
 
 ---
 
@@ -49,4 +49,4 @@
 **Pattern-Key:** skills-install-symlink
 **Lesson:** Skills from ~/.agents/skills/ (skills.sh) need to be symlinked to ~/.openclaw/workspace/skills/ for OpenClaw to discover them. The skills.sh CLI said "symlinked: OpenClaw" but the symlinks were NOT created automatically.
 **Action:** Manually run: ln -sf ~/.agents/skills/<skill-name> ~/.openclaw/workspace/skills/<skill-name>
-**Promote to:** TOOLS.md - Skills installation
+**Promote to:** ✅ PROMOTED → TOOLS.md (2026-04-15 bi-weekly review)

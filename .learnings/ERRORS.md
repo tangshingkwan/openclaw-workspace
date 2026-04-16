@@ -11,12 +11,14 @@
 **Command:** OCR of dryer manual pages (7 images)
 **What worked:** Processing images one at a time instead of batch
 **Lesson:** MiniMax VL has lower throughput than expected; always do single images with timeout handling
+**Promoted to:** ✅ TOOLS.md (2026-04-15 bi-weekly review)
 
 ### 2026-04-11 | image_model: MiniMax-VL API 1033
 **Error:** `MiniMax VLM API error (1033): system error`
 **Command:** Image OCR on batch
 **What worked:** Retry with single image, worked on second try
 **Integration:** OpenClaw image model
+**Promoted to:** ✅ TOOLS.md (2026-04-15 bi-weekly review)
 
 ---
 
@@ -28,6 +30,8 @@
 | MiniMax VL (image) | API 1033 | Retry |
 | Playwright PDF | Relative paths fail | Use file:// URLs |
 | Discord upload | API route unknown | Use openclaw CLI |
+
+**Note:** All ERRORS.md patterns → ✅ PROMOTED to TOOLS.md (2026-04-15 bi-weekly review)
 
 ---
 

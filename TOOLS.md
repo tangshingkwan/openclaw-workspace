@@ -125,3 +125,44 @@ bash skills/quick-reminders/scripts/nohup-reminder.sh remove <id>
 ```
 
 **Note:** For reminders >48h, use TickTick calendar instead.
+
+---
+
+## 🖼️ Image Model (MiniMax VL)
+
+**Gotchas:**
+- Batch processing (multiple images) often times out — process single images with timeout handling
+- API error 1033 (system error) — retry with single image, usually works on 2nd try
+- Always do single image mode for OCR/captioning tasks
+
+---
+
+## 📄 PDF Generation
+
+**Font Selection (Chinese):**
+- Noto Sans SC = Simplified Chinese
+- Noto Sans TC = Traditional Chinese
+- Always identify character set BEFORE selecting fonts
+- Test Chinese text rendering early, not after multiple iterations
+
+**Playwright PDF:**
+- Relative paths fail → use `file://` URLs instead
+
+---
+
+## 💬 Discord File Sharing
+
+Use the openclaw CLI for PDF/file uploads:
+```bash
+openclaw message send --channel discord --target channel:XXX --media /path/to/file
+```
+
+---
+
+## 🛠️ Skills Installation
+
+**Symlink Required:** Skills from `~/.agents/skills/` need manual symlinking:
+```bash
+ln -sf ~/.agents/skills/<skill-name> ~/.openclaw/workspace/skills/<skill-name>
+```
+The skills.sh CLI may say "symlinked: OpenClaw" but symlinks are NOT auto-created — verify manually.

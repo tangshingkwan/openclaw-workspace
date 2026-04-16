@@ -266,6 +266,9 @@ Don't wait for permission to improve. If you learned something, write it down no
 
 > Add your lessons here as you learn them
 
+### Image Cropping / Processing
+When crop quality is uncertain, always ask user to resend reference image rather than relying on analyzed coordinates.
+
 ### [Topic]
 [What you learned and how to do it better]
 
