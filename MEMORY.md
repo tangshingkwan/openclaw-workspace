@@ -61,6 +61,7 @@
 - **Platform:** OpenClaw on Proxmox LXC container
 - **Model:** MiniMax-M2.7 (session override)
 - **Identity:** Franky's Little Assistant - Travis 🌞
+- **Dreaming:** memory-core plugin with dreaming enabled (check if present after updates)
 
 ## Email Monitoring (Travis Inbox)
 - **Dedicated Account:** tangyiusuntravis@gmail.com
@@ -81,7 +82,7 @@
 | Job | Status | Notes |
 |-----|--------|-------|
 | Email Check (2hr) | ✅ Active | Working fine |
-| Daily Backup (9AM HKT) | ❌ Failing | Timeout - needs fix |
+| Daily Backup (9AM HKT) | ✅ Working | Running daily, 7-day retention |
 | Email Setup Reminder | ❌ Disable | Already done |
 
 ## Proxmox Access
