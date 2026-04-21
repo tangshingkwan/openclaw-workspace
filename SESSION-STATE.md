@@ -1,7 +1,7 @@
 # SESSION-STATE.md
 
 **Status:** Active
-**Last Updated:** 2026-04-14
+**Last Updated:** 2026-04-20
 **Protocol:** WAL — Write here BEFORE responding to any message containing corrections, decisions, preferences, or key details.
 
 ---
@@ -37,7 +37,9 @@
 
 ## Open Threads
 
--
+- Y2 wiki: auto-sync cron needs verification (since 2026-04-16)
+- Quotation: Franky reviewing Phase 2 appendix images (since 2026-04-16)
+- OpenCLI browser automation: SSH tunnel auto-start on Windows (from 2026-04-18)
 
 ---
 
@@ -65,7 +67,16 @@
 
 ## Today's Context
 
-**Date:** 2026-04-14
-**Session focus:** Skill evaluation — proactive-agent and self-improvement setup
+**Date:** 2026-04-20
+**Session focus:** Weekly Memory Freshener — refreshed from daily notes
 
 ---
+
+{
+  "lastChecks": {
+    "email": 1776320596,
+    "calendar": 1776320596,
+    "weather": 1776320596,
+    "fullCheck": 1776320596
+  }
+}

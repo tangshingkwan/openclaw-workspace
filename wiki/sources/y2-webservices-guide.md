@@ -1,56 +1,67 @@
 ---
-title: "Consuming Y2 Web Services"
+title: "Y2 Web Services Guide"
 type: source
 source-type: document
-source-url: 
-date-added: 2026-04-15
-tags: [cegid, y2, webservices, soap, api, integration]
-summary: "Official Cegid guide for consuming Y2 retail web services via SOAP. Covers authentication (Basic, NTLM, Cookie), WSDL configuration, and code samples in PHP, C#, Python, Ruby, Java, and JavaScript."
+date-added: 2026-04-20
+tags: [cegid, y2, webservices, soap, api, php, csharp, integration]
+summary: "How to consume Y2 web services: PHP and C# examples, WSDL, authentication, arrays, dates, enums."
 ---
 
-# Consuming Y2 Web Services
+# Y2 Web Services Guide
 
 ## Overview
 
-Official Cegid documentation (extracted from PDF, dated 2026-02-27) providing illustrative examples of how to consume Y2 Web Services via SOAP. Target version: Cegid Retail Y2 Version 26.
+Guide for consuming Y2 web services via SOAP API. Includes code examples in PHP and C#.
 
-## Key Takeaways
+**Source:** Extracted 2026-02-27
 
-### Authentication Methods
-- **Basic Auth (CBR)** — Username/password sent in SOAP header
-- **NTLM Auth** — Supported but deprecated
-- **Cookie-based Auth** — Optimizes WS/HTTP flow by caching auth cookie
+## Supported Languages
 
-### Core Concepts
-- `DatabaseId` = FolderId of the database to target
-- `RetailContext` object required for all requests
-- WSDL cache should be **enabled in production** (`soap.wsdl_cache_enabled=1`)
-- All requests use SOAP over HTTP/HTTPS
+| Language | Notes |
+|----------|-------|
+| PHP | Using suds library or native SOAP |
+| C# | .NET with WSDL reference |
 
-### Supported Languages
-1. **PHP** (>= 5.6.25) — SoapClient class
-2. **C#** — Visual Studio Service Reference + WCF
-3. **Python 2.7** — suds library
-4. **Ruby** — savon gem
-5. **Java** — Eclipse + Apache Axis2
-6. **JavaScript** — Browser-based (custom soapclient.js)
+## Key Topics
 
-### Common Data Types
-- **Arrays** — Create cell objects, then aggregate into array
-- **Dates** — ISO 8601 format (`YYYY-MM-DDTHH:MM:SS`)
-- **Enum** — Use constant string values directly (no enum type in PHP/Python/Ruby)
-- **Non-ASCII** — UTF-8 encoding required for all languages
+### General
+- WSDL Cache configuration
+- Basic authentication
+- Non-ASCII character handling
+- Troubleshooting
 
-### Troubleshooting
-- Enable trace logging to capture XML request/response
-- PHP: Use `soapDebug.php` to log SOAP traffic
-- C#: Use `System.ServiceModel.MessageLogging` in app.config
-- Python: Use `logging.getLogger('suds.client')`
-- JavaScript: Browser console + Fiddler
+### Data Types
+- Arrays
+- Dates
+- Enums
 
-## Related Concepts
-- [[y2-connectors]] — Y2 connector documentation (Adyen, Avalara, Vertex)
-- [[synagie-api]] — Franky's SynagieAPI interface project
+### Common Operations
+- AddNewCustomer (complex example)
+- Response handling
 
-## Source
-`documents/Y2/Common/Webservices/Consuming Y2 Web Services/`
+## Code Example Structure
+
+```php
+// PHP SOAP example
+$client = new SoapClient('http://y2server/Y2WS.asmx?WSDL');
+$client->__setUsernameToken('user', 'pass');
+$result = $client->SomeOperation($params);
+```
+
+```csharp
+// C# WSDL reference example
+var client = new Y2ServiceRef.Y2WS();
+client.ClientCredentials.UserName.UserName = "user";
+client.ClientCredentials.UserName.Password = "pass";
+var result = client.SomeOperation(params);
+```
+
+## Authentication
+
+- Basic auth via username token
+- WSDL endpoint: `http://y2server/Y2WS.asmx?WSDL`
+
+## See Also
+
+- [[y2-connectors|Y2 Connectors Overview]]
+- [[y2plugin-customerorder-v26|Customer Order Plugin]] (API integration)
