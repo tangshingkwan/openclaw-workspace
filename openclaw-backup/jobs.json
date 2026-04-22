@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "6d78ac81-92da-4979-85c7-2ac034f9d7ce",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+85291621392",
+      "name": "Daily OpenClaw Backup",
+      "enabled": true,
+      "createdAtMs": 1774113655180,
+      "schedule": {
+        "expr": "0 9 * * *",
+        "kind": "cron",
+        "tz": "Asia/Hong_Kong"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the backup script at /root/.openclaw/workspace/scripts/backup.sh, then send a WhatsApp message to +85291621392 saying 'Daily backup complete: [filename]' with the backup filename.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "channel": "whatsapp",
+        "mode": "announce",
+        "to": "+85291621392"
+      },
+      "state": {}
+    },
+    {
+      "id": "d2f4f1a4-e612-4016-b376-068b7e7d3d2d",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+85291621392",
+      "name": "Email Check - Urgent Alerts",
+      "enabled": true,
+      "createdAtMs": 1774613912843,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 7200000,
+        "anchorMs": 1700000000000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the email check script at /root/.openclaw/workspace/scripts/check-emails.py and analyze the output.\n\nIf the output contains 'URGENT_EMAILS_FOUND', send a WhatsApp message to +85291621392 with:\n- A summary of the urgent emails (subject, sender, date)\n- A brief summary of what each email is about\n\nIf the output is 'NO_URGENT_EMAILS', do nothing and end the session silently.\n\nUse the exec tool to run: python3 /root/.openclaw/workspace/scripts/check-emails.py",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+85291621392"
+      },
+      "state": {}
+    },
+    {
+      "id": "412ac961-2834-496e-adaf-b312169de43e",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1380620624657125457",
+      "name": "GitHub Auto-Backup",
+      "enabled": true,
+      "createdAtMs": 1774675257009,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run /root/.openclaw/workspace/scripts/auto-backup.sh to commit and push any workspace changes to GitHub. If there are no changes, exit silently. Commit message should describe what changed. Report back with a brief summary of what was pushed."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord"
+      },
+      "state": {}
+    },
+    {
+      "id": "d549836d-4a70-43a8-9635-718c7c512363",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1487142695003492532",
+      "name": "Patreon Posts Fetcher",
+      "enabled": true,
+      "createdAtMs": 1774749265785,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9,21 * * *",
+        "tz": "Asia/Hong_Kong"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the Patreon fetch script: cd /root/.openclaw/workspace && node scripts/patreon-fetch.js\n\nAfter fetching, read patreon-posts.json and create a concise summary in Chinese of the latest posts from each creator this week.\n\nReply with your summary starting with '📊 **Patreon 每週內容摘要**' so it gets delivered to the configured channel."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "1487142695003492532"
+      },
+      "state": {}
+    },
+    {
+      "id": "0bf827be-b804-45bb-be0c-1adcecfc98ed",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1380620624657125457",
+      "name": "Memory Freshener - Weekly",
+      "description": "Weekly: Reviews SESSION-STATE.md freshness, syncs from daily notes, updates if stale",
+      "enabled": true,
+      "createdAtMs": 1776179368747,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Hong_Kong"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "AUTONOMOUS TASK: Memory Freshener\n\n1. Read SESSION-STATE.md — check if it has been updated in the past 7 days\n2. Read memory/YYYY-MM-DD.md files for the past week — look for patterns, decisions, open threads\n3. If SESSION-STATE.md is stale (not updated recently), update it with latest context from daily notes\n4. Check heartbeat-state.json — update lastChecks.memory_flush timestamp\n5. Check if any open threads in SESSION-STATE.md should be promoted to MEMORY.md\n6. Report briefly what was done (1-2 sentences max)\n\nDo NOT ask questions. Just do the work and report completion.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "431ee2b7-7b75-4ea0-89d9-d55037a1423d",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1380620624657125457",
+      "name": "Learnings Review - Bi-weekly",
+      "description": "Bi-weekly: Reviews .learnings/ files and promotes quality entries to AGENTS.md/TOOLS.md",
+      "enabled": true,
+      "createdAtMs": 1776179378273,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 */14 * *",
+        "tz": "Asia/Hong_Kong"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "AUTONOMOUS TASK: Learnings Review\n\n1. Read .learnings/LEARNINGS.md — check for entries not yet promoted to AGENTS.md, TOOLS.md, or SOUL.md\n2. Read .learnings/ERRORS.md — check for patterns that need to be fixed in TOOLS.md\n3. For each un-promoted learning:\n   - If broadly applicable to workflows → promote to AGENTS.md\n   - If tool-specific → promote to TOOLS.md\n   - If behavioral → promote to SOUL.md\n4. Log promotion actions in .learnings/ itself (cross-reference)\n5. Report: \"Promoted X entries to AGENTS.md, Y entries to TOOLS.md\"\n\nDo NOT ask questions. Just review and promote.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "159f1b83-4d79-405c-aab1-f667c1517296",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1380620624657125457",
+      "name": "Wiki Weekly Lint",
+      "description": "Weekly health-check of Franky's wiki",
+      "enabled": true,
+      "createdAtMs": 1776275611157,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Hong_Kong"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run /root/.openclaw/workspace/scripts/wiki-lint.sh and post the output to Discord.",
+        "timeoutSeconds": 60
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord"
+      },
+      "state": {}
+    },
+    {
+      "id": "28dfa9d3-3203-4fab-81ef-9f0fe767e7d9",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1380620624657125457",
+      "name": "Wiki Settings Review",
+      "description": "Review wiki settings after 1 month of use",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1776275611163,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-15T01:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Wiki Settings Review: It's been ~1 month since we set up the LLM Wiki. Review the settings we configured (Focus: Tech+Business, Source Intake: One-at-a-time, Detail Level: Standard, Auto-Lint: Weekly). Time to ask Franky how the workflow has been and if any settings should change. Reach out on Discord.",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord"
+      },
+      "state": {}
+    },
+    {
+      "id": "a597bd9f-5175-4017-b7b6-4453f4a8afb0",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1380620624657125457",
+      "name": "Wiki Daily Sync",
+      "description": "Daily wiki sync to GitHub",
+      "enabled": true,
+      "createdAtMs": 1776314077895,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Hong_Kong"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run /root/.openclaw/workspace/scripts/wiki-sync.sh to sync the Y2 wiki to GitHub. Report success/failure.",
+        "timeoutSeconds": 60
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "1380620624657125457",
+        "channel": "discord"
+      },
+      "state": {}
+    }
+  ]
+}

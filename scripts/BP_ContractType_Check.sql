@@ -1,0 +1,29 @@
+/* =============================================
+   BP Contract Type Check
+   Check CONTRACTTYPE (MUD_IDCHAMP=35, MUD_ENTITEMCD='CLI') for company store BPs
+   ============================================= */
+
+SELECT
+    T.T_TIERS AS BP_Code,
+    T.T_LIBELLE AS BP_Name,
+    T.YTC_TABLELIBRETIERS1 AS TableLibre1,
+    T.YTC_TABLELIBRETIERS2 AS TableLibre2,
+    CONTRACTTYPE.MUD_VALCHAMP AS ContractType
+
+FROM TIERS T
+
+LEFT JOIN MCHPSUTILISATDATA CONTRACTTYPE
+    ON CONTRACTTYPE.MUD_ENTITEMCD = 'CLI'
+    AND CONTRACTTYPE.MUD_CLEENTITE = T.T_TIERS
+    AND CONTRACTTYPE.MUD_IDCHAMP = 35
+
+WHERE T.T_TIERS IN (
+    '3200008367',  -- SHISEIDO
+    '3200008370',  -- CPB
+    '3200008369',  -- NARS
+    '3200012899',  -- DE
+    '3200010160',  -- SF
+    '3200008365'   -- C&PC
+)
+
+ORDER BY T.T_TIERS

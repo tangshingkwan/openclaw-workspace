@@ -60,6 +60,10 @@
     "cli-anything-hkuds": {
       "version": "1.0.0",
       "installedAt": 1776485281054
+    },
+    "graphify": {
+      "version": "2.1.0",
+      "installedAt": 1776775742789
     }
   }
 }

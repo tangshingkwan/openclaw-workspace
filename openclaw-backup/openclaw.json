@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.15",
+    "lastTouchedAt": "2026-04-18T17:54:46.232Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-09T06:36:44.451Z",
+    "lastRunVersion": "2026.4.5",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "minimax:global": {
+        "provider": "minimax",
+        "mode": "api_key"
+      },
+      "minimax-portal:default": {
+        "provider": "minimax-portal",
+        "mode": "oauth"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimax.io/anthropic",
+        "api": "anthropic-messages",
+        "authHeader": true,
+        "models": [
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax M2.5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.3,
+              "output": 1.2,
+              "cacheRead": 0.03,
+              "cacheWrite": 0.12
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          },
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.4,
+              "output": 1.5,
+              "cacheRead": 0.04,
+              "cacheWrite": 0.15
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          }
+        ]
+      },
+      "minimax-portal": {
+        "baseUrl": "https://api.minimax.io/anthropic",
+        "apiKey": "[REDACTED]",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax M2.5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          },
+          {
+            "id": "MiniMax-M2.5-highspeed",
+            "name": "MiniMax M2.5 Highspeed",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          },
+          {
+            "id": "MiniMax-M2.5-Lightning",
+            "name": "MiniMax M2.5 Lightning",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          },
+          {
+            "id": "MiniMax-M2.7-highspeed",
+            "name": "MiniMax M2.7 Highspeed",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax-portal/MiniMax-M2.7-highspeed",
+        "fallbacks": [
+          "minimax-portal/MiniMax-M2.7-highspeed",
+          "minimax/MiniMax-M2.5",
+          "minimax/MiniMax-M2.7",
+          "minimax-portal/MiniMax-M2.5-highspeed",
+          "minimax-portal/MiniMax-M2.5-Lightning"
+        ]
+      },
+      "models": {
+        "minimax/MiniMax-M2.5": {
+          "alias": "Minimax"
+        },
+        "minimax/MiniMax-M2.7": {
+          "alias": "Minimax"
+        },
+        "minimax-portal/MiniMax-M2.5": {
+          "alias": "minimax-m2.5"
+        },
+        "minimax-portal/MiniMax-M2.5-highspeed": {
+          "alias": "minimax-m2.5-highspeed"
+        },
+        "minimax-portal/MiniMax-M2.5-Lightning": {
+          "alias": "minimax-m2.5-lightning"
+        },
+        "minimax-portal/MiniMax-M2.7": {},
+        "minimax-portal/MiniMax-M2.7-highspeed": {
+          "alias": "minimax-m2.7-highspeed"
+        }
+      },
+      "workspace": "/root/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "model": "minimax-portal/MiniMax-M2.7-highspeed"
+      }
+    ]
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "messages": {
+    "responsePrefix": "Travis \ud83c\udf1e",
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": false,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+85291621392"
+      ],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "discord": {
+      "enabled": true,
+      "token": "[REDACTED]",
+      "groupPolicy": "allowlist",
+      "streaming": {},
+      "guilds": {
+        "1380620624220655808": {
+          "requireMention": false,
+          "users": [
+            "485642638427553812"
+          ],
+          "channels": {
+            "1380620624657125457": {
+              "enabled": true
+            },
+            "1487142695003492532": {
+              "enabled": true
+            },
+            "1487125088611336222": {
+              "enabled": true
+            },
+            "1487103257313673437": {
+              "enabled": true
+            },
+            "1493641255266160911": {
+              "enabled": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "4fa0e1fe95f755518ae28e15b84237bfa965a22be16cd789"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "entries": {
+      "clawhub": {
+        "enabled": true
+      },
+      "last30days": {
+        "enabled": true
+      }
+    }
+  },
+  "plugins": {
+    "slots": {
+      "memory": "openclaw-mem0"
+    },
+    "entries": {
+      "whatsapp": {
+        "enabled": true,
+        "config": {}
+      },
+      "openclaw-mem0": {
+        "enabled": true,
+        "config": {
+          "mode": "platform",
+          "userId": "franky",
+          "oss": {
+            "llm": {
+              "provider": "openai",
+              "config": {
+                "openaiBaseUrl": "https://api.minimax.io/anthropic",
+                "apiKey": "minimax-oauth"
+              }
+            },
+            "embedder": {
+              "provider": "openai",
+              "config": {
+                "openaiBaseUrl": "https://api.minimax.io/anthropic",
+                "apiKey": "minimax-oauth"
+              }
+            },
+            "vectorStore": {
+              "config": {
+                "dimension": 1536
+              }
+            }
+          },
+          "apiKey": "m0-KUnOSUNRUJt4LewUpbbFb1o5RAtZHlpBNHQoCfos"
+        }
+      },
+      "memory-lancedb": {
+        "enabled": false
+      },
+      "minimax": {
+        "config": {},
+        "enabled": true
+      },
+      "memory-core": {
+        "enabled": false,
+        "config": {
+          "dreaming": {
+            "enabled": true
+          }
+        }
+      }
+    },
+    "installs": {
+      "openclaw-mem0": {
+        "source": "npm",
+        "spec": "@mem0/openclaw-mem0",
+        "installPath": "/root/.openclaw/extensions/openclaw-mem0",
+        "version": "0.4.0",
+        "resolvedName": "@mem0/openclaw-mem0",
+        "resolvedVersion": "0.4.0",
+        "resolvedSpec": "@mem0/openclaw-mem0@0.4.0",
+        "integrity": "sha512-BUfCmlz4vI6PZS3jHHWizJCVP+riK90BVfwsaVyENtj0LEgQoymzr/THbx2Ye59YLOuFB/eHYsnpRFWEVOIHlw==",
+        "shasum": "0a544485eb53a93e1a7458d45ac4aed507ff5cfb",
+        "resolvedAt": "2026-03-22T07:59:17.442Z",
+        "installedAt": "2026-03-22T07:59:56.441Z"
+      }
+    }
+  }
+}

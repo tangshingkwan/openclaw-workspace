@@ -1,0 +1,29 @@
+/* =============================================
+   Store User Fields Check for Company Stores
+   Check which stores have ET_LIBREET1 = '006' (Company Store flag)
+   ============================================= */
+
+SELECT
+    E.ET_ETABLISSEMENT AS StoreCode,
+    E.ET_LIBELLE AS StoreName,
+    E.ET_LIBREET1 AS StoreType,  /* Should be '006' for company stores */
+
+    MAX(CASE WHEN U.MUD_IDCHAMP = 1 THEN U.MUD_VALCHAMP END) AS UserField1,
+    MAX(CASE WHEN U.MUD_IDCHAMP = 2 THEN U.MUD_VALCHAMP END) AS UserField2,
+    MAX(CASE WHEN U.MUD_IDCHAMP = 3 THEN U.MUD_VALCHAMP END) AS UserField3,
+    MAX(CASE WHEN U.MUD_IDCHAMP = 4 THEN U.MUD_VALCHAMP END) AS UserField4,
+    MAX(CASE WHEN U.MUD_IDCHAMP = 5 THEN U.MUD_VALCHAMP END) AS UserField5,
+    MAX(CASE WHEN U.MUD_IDCHAMP = 6 THEN U.MUD_VALCHAMP END) AS UserField6
+
+FROM ETABLISS E
+
+LEFT JOIN MCHPSUTILISATDATA U
+    ON U.MUD_ENTITEMCD = 'ETA'
+    AND U.MUD_CLEENTITE = E.ET_ETABLISSEMENT
+    AND U.MUD_IDCHAMP BETWEEN 1 AND 6
+
+WHERE E.ET_LIBREET1 = '006'  /* Company Stores only */
+
+GROUP BY E.ET_ETABLISSEMENT, E.ET_LIBELLE, E.ET_LIBREET1
+
+ORDER BY E.ET_ETABLISSEMENT
