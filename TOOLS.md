@@ -166,3 +166,37 @@ openclaw message send --channel discord --target channel:XXX --media /path/to/fi
 ln -sf ~/.agents/skills/<skill-name> ~/.openclaw/workspace/skills/<skill-name>
 ```
 The skills.sh CLI may say "symlinked: OpenClaw" but symlinks are NOT auto-created — verify manually.
+
+---
+
+## 🤖 Hermes Discord Bot (LXC 103 - hermes, 192.168.1.103)
+
+**Status:** ✅ Running (as Jasmine#6934)
+
+**SSH Access:**
+```bash
+ssh root@192.168.1.103
+# Password: Travis123
+```
+
+**Service Management:**
+```bash
+systemctl status hermes-discord    # Check if running
+systemctl restart hermes-discord   # Restart (preferred way)
+systemctl stop hermes-discord      # Stop
+systemctl start hermes-discord     # Start
+journalctl -u hermes-discord -f    # Watch live logs
+```
+
+**Key Files:**
+- Config: `/root/.hermes/config.yaml`
+- Logs: `/root/.hermes/logs/agent.log`, `errors.log`, `gateway-restart.log`
+- PID: `/root/.hermes/gateway.pid`
+- Dashboard: http://192.168.1.103:9119
+
+**Common Fixes:**
+- Service not responding → Check `systemctl status hermes-discord`
+- Stale PID → `rm -f /root/.hermes/gateway.pid && systemctl restart hermes-discord`
+- Bot ignores messages → `sed -i 's/require_mention: true/require_mention: false/' /root/.hermes/config.yaml`
+
+**Full troubleshooting guide:** `.learnings/HERMES_DISCORD_FIXES.md`
