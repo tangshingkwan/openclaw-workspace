@@ -169,6 +169,21 @@ The skills.sh CLI may say "symlinked: OpenClaw" but symlinks are NOT auto-create
 
 ---
 
+## 🔀 Proxmox Host (192.168.1.20)
+
+**Access:** Web UI https://192.168.1.20:8006 | SSH port 22 (blocked from outside, use LXC 102 as jump host)
+
+**Tailscale:** ✅ Installed
+- Tailscale IP: `100.81.23.65`
+- Auth URL used: `https://login.tailscale.com/a/14978f22019974`
+- Can now access Proxmox UI via `https://100.81.23.65:8006` from any Tailscale device
+
+**LXCs running:**
+- LXC 102: OpenClaw (192.168.1.101)
+- LXC 103: Hermes/Discord bot (192.168.1.103)
+
+---
+
 ## 🤖 Hermes Discord Bot (LXC 103 - hermes, 192.168.1.103)
 
 **Status:** ✅ Running (as Jasmine#6934)
