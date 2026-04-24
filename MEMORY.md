@@ -57,6 +57,11 @@
   3. Samsung S25 Ultra (HK$7,998) - S Pen, waterproof
   4. Pixel 10 Pro XL (HK$6,480) - Best AI features
 
+## Proxmox Tailscale (2026-04-23)
+- **Tailscale IP:** 100.81.23.65
+- **Access:** Now reachable via Tailscale network at https://100.81.23.65:8006
+- **Auth URL:** https://login.tailscale.com/a/14978f22019974
+
 ## System Info
 - **Platform:** OpenClaw on Proxmox LXC container
 - **Model:** MiniMax-M2.7 (session override)
