@@ -1,7 +1,7 @@
 # SESSION-STATE.md
 
 **Status:** Active
-**Last Updated:** 2026-04-20
+**Last Updated:** 2026-04-27
 **Protocol:** WAL — Write here BEFORE responding to any message containing corrections, decisions, preferences, or key details.
 
 ---
@@ -37,9 +37,8 @@
 
 ## Open Threads
 
-- Y2 wiki: auto-sync cron needs verification (since 2026-04-16)
-- Quotation: Franky reviewing Phase 2 appendix images (since 2026-04-16)
-- OpenCLI browser automation: SSH tunnel auto-start on Windows (from 2026-04-18)
+- Graphify wiki: semantic extraction blocked, needs LLM API key (low priority, since 2026-04-21)
+- Wiki lint script: weekly Mondays 9AM HKT (scheduled, needs first run confirmation)
 
 ---
 
