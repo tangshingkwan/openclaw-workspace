@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T03:00:01.044Z",
+  "updatedAt": "2026-05-04T03:00:01.207Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-05-01.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:1:1",
@@ -1511,6 +1511,315 @@
         "complete",
         "openclaw",
         "disabled"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Patreon 每週內容摘要** (2026年4月27日 - 5月3日) --- **🔵 茄利略・CUP (Kelileo)** 本週重點： - ** Yardeni 分析《石油衝擊與通脹》** — 深度解析市場從1月27日歷史高點回落9.1%後反彈的原因，認為3月底低點可能是今年底部，預期年底標普可達7,700點；強調在半導體/硬體表現亮眼同時，軟體/服務卻呈負增長；美國每日2,300萬桶原油產量歷史新高，能源韌性強。 - ** 每週技術數據** — 發布5月4-8日 Weekly Expected Move（1-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "深度解析市場從1月27日歷史高點回落9.1",
+        "強調在半導體/硬體表現亮眼同時",
+        "軟體/服務卻呈負增長",
+        "發布5月4-8日",
+        "1-2",
+        "patreon",
+        "每週",
+        "內容"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 投資** — 分析財報季散戶選擇權炒作現象 vs 長線投資的差異。 - ** 每日簡評涵蓋：** META -9%、NVDA -5%引發的半導體回調；美伊談判進展與油價Higher and Longer風險；POET被Marvell切單腰斬事件；FOMC利率政策分歧；Trump威脅解僱Powell。 - ** 核電新星** — 板塊分析。 --- **本週核心主題：** 地緣政治（美伊談判、UAE退出OPEC）主導市場情緒，AI/半導體板塊分化明顯（硬體強、軟體弱），投資者關注通脹路徑與聯儲局利率前景。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "ai/半導體板塊分化明顯",
+        "投資",
+        "分析",
+        "散戶",
+        "選擇權",
+        "炒作",
+        "現象",
+        "差異"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: WhatsApp channel seems unavailable right now — the backup itself succeeded though. Here's the summary: ✅ **Backup complete** - **File:** `openclaw_backup_20260504_010213.tar.gz` - **Path:** `/mnt/usbhdd/openclaw-backup/openclaw_backup_20260504_010213.tar.gz` ⚠️ **Whats",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "backup",
+        "whatsapp",
+        "channel",
+        "seems",
+        "unavailable",
+        "right",
+        "now",
+        "itself"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: No daily notes since April 21 — need to refresh SESSION-STATE. Let me update both files.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "session-state",
+        "april",
+        "need",
+        "refresh",
+        "state",
+        "let",
+        "update",
+        "both"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Memory freshener complete. No daily notes existed for the past week (last entry was April 21), so SESSION-STATE.md was stale — refreshed it with the Japan trip reminder (May 7-14, just 3 days away). Updated heartbeat-state.json with today's timestamp for memory_flush.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "session-state.md",
+        "7-14",
+        "heartbeat-state.json",
+        "memory-flush",
+        "freshener",
+        "complete",
+        "existed",
+        "week"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Wiki lint posted as my reply (Discord channel unavailable — service may be down). **Summary:** 49 orphaned raw files, 168 broken cross-references, INDEX.md stale since Apr 20. The `[[&]]` template bug alone accounts for ~20 broken links across multiple files. Full outp",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "index.md",
+        "wiki",
+        "lint",
+        "posted",
+        "reply",
+        "discord",
+        "channel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: **GitHub Auto-Backup complete** ✅ 📦 **13 files changed** — 3,163 insertions, 6 deletions **New files added:** - `DREAMS.md` — new dream-related document - `memory/.dreams/` — session corpus (May 1-3), events, phase-signals, session-ingestion, short-term-recall - `memo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "backup",
+        "auto-backup",
+        "dreams.md",
+        "dream-related",
+        "1-3",
+        "phase-signals",
+        "session-ingestion",
+        "short-term-recall"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Wiki Sync Complete** The Y2 wiki is already in sync with GitHub — no changes needed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "wiki",
+        "sync",
+        "complete",
+        "already",
+        "github",
+        "changes",
+        "needed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Patreon 每週內容摘要** **🌐 茄利略・CUP（Kelileo）** 本週重點： • **All-in Podcast 筆記** — OpenAI 錯失目標、Codex vs Claude、Elon vs Sam 官司、大型 AI 雲端廠商業績勝預期、Peptide 熱潮 • **Yardeni 分析** — 「石油衝擊與通脹」：美國產油創新高（每日 2300 萬桶），聯準會目前處於「涅槃」理想狀態，年底標普目標 7700 點，半導體佔科技板塊市值達 41.9% • **每週總結（3-May-2026）** —",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "openai",
+        "all-in",
+        "41.9",
+        "3-may-2026",
+        "patreon",
+        "每週",
+        "內容",
+        "摘要"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Trading** 本週重點（需付費解鎖）： • **周末市評 + 技術分析教學**（2/5/2026）— 結合市場技術走勢的周末點評，含圖表教學內容 --- *數據截至 2026-05-04，個別內容為付費限定。*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-04T03:00:01.207Z",
+      "lastRecalledAt": "2026-05-04T03:00:01.207Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "2/5/2026",
+        "trading",
+        "本週",
+        "重點",
+        "付費",
+        "周末",
+        "技術",
+        "分析"
       ]
     }
   }
