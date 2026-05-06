@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T03:00:01.207Z",
+  "updatedAt": "2026-05-05T03:00:01.021Z",
   "entries": {
     "memory:memory/.dreams/session-corpus/2026-05-01.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:1:1",
@@ -1820,6 +1820,192 @@
         "周末",
         "技術",
         "分析"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Patreon 每週內容摘要**（2026年5月4日） --- **🔵 茄利略・CUP（Kelileo）** 最新（21小時前）：【市場資訊筆記】All-In Podcast 摘要，涵蓋 OpenAI 目標未達、Codex vs Claude 大模型競爭、Elon vs Sam Altman 訴訟，以及各大雲端巨頭業績出爐、AI 肽熱潮等話題。屬宏觀經濟及 AI 趨勢整合內容，無任何個股建議。 --- **🟡 Calvin Choy Studio** 最新（10小時前）：《財富閒談》260504 — 探討 Lewis",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-05T03:00:01.021Z",
+      "lastRecalledAt": "2026-05-05T03:00:01.021Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "openai",
+        "all-in",
+        "patreon",
+        "每週",
+        "內容",
+        "摘要",
+        "cup",
+        "kelileo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: 業績市場觀望，OpenAI 收入增速低於預期、光通訊拋售、美伊戰爭遠期影響 | | 4月27日 | POET 被 Marvell 腰斬訂單，光通訊/CPU 概念股連鎖崩跌 | **核心觀點：** 市場已從「地緣政治」切換至「財報季」，半導體漲多回調，資金開始輪動至小型股；美伊和談移除短期尾部風險，焦點轉向年尾減息預期分歧。 --- 以上為三大創作者本週內容精華。如需針對某位創作者的深度分析，告訴我 🔍",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-05T03:00:01.021Z",
+      "lastRecalledAt": "2026-05-05T03:00:01.021Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "openai",
+        "光通訊/cpu",
+        "業績",
+        "市場",
+        "觀望",
+        "收入",
+        "低於",
+        "預期"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-05.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-05.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-05.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Auto-backup complete** Pushed **14 files changed** (1,040 additions, 135 deletions) to `master`: - Dream/session memory files for May 3-4 - `DREAMS.md`, `SESSION-STATE.md`, heartbeat state - Patreon history and posts for May 4",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-05T03:00:01.021Z",
+      "lastRecalledAt": "2026-05-05T03:00:01.021Z",
+      "queryHashes": [
+        "8437f7355b64"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "backup",
+        "auto-backup",
+        "dream/session",
+        "3-4",
+        "dreams.md",
+        "session-state.md",
+        "auto",
+        "complete"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-05.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-05.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-05.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Patreon 每週內容摘要**（2026年5月1日 – 5月5日） --- **🔴 茄利略・CUP（Kelileo）** 本週以宏觀市場分析為主，焦點內容： • **Yardeni 影片筆記**：「石油衝擊與通脹」，分析美股從1月高位回調9.1%後強彈，企業盈利創新高，半導體市值佔比達41.9%；美國每日產油2300萬桶，能源抗壓力強；看好AI生產力提升可使經濟邁向「咆哮2020年代」，聯儲局目前處於「涅槃」狀態，減息非必要。 • **All-in Podcast 筆記**：覆蓋 OpenAI 收入增速低於預期、Cod",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-05T03:00:01.021Z",
+      "lastRecalledAt": "2026-05-05T03:00:01.021Z",
+      "queryHashes": [
+        "8437f7355b64"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "openai",
+        "分析美股從1月高位回調9.1",
+        "半導體市值佔比達41.9",
+        "all-in",
+        "patreon",
+        "每週",
+        "內容",
+        "摘要"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-05.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-05.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-05.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 本週以技術分析與財報季拆局為主： • **週末市評（2/5）**：半導體已連升18日，資金被吸乾，META -9%、NVDA -5%，小型股有突破傾向；同時發佈[數Base]技術分析教學。 • **〈賭業績，還是投資？〉**：分析散戶在財報季用Options「賭大小」的現象 vs 長線投資的基本面意義。 • **每日簡評線索**：美伊局勢由轟炸升級至停火談判，市場焦點切換至財報季；POET因洩密被Marvell切斷訂單，股價腰斬，光通訊及CPU概念股受拖累；科技股分化——半導體業績後大漲（TXN +19%），軟件股普遍大跌（NOW",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-05T03:00:01.021Z",
+      "lastRecalledAt": "2026-05-05T03:00:01.021Z",
+      "queryHashes": [
+        "8437f7355b64"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "2/5",
+        "本週",
+        "技術",
+        "分析",
+        "為主",
+        "週末",
+        "半導體",
+        "資金"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-05.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-05.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-05.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Wiki Sync Complete** Script: `/root/.openclaw/workspace/scripts/wiki-sync.sh` Result: **Success** — No changes to sync (Y2 wiki is already up to date with GitHub).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-05T03:00:01.021Z",
+      "lastRecalledAt": "2026-05-05T03:00:01.021Z",
+      "queryHashes": [
+        "8437f7355b64"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "wiki",
+        "sync",
+        "complete",
+        "script",
+        "root",
+        "openclaw",
+        "scripts",
+        "sync.sh"
       ]
     }
   }
